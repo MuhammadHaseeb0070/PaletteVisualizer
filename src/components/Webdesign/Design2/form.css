@@ -1,0 +1,467 @@
+:root {
+    --primary-color: #66fcf1;
+    /* Green */
+    --secondary-color: #0b0c10;
+    /* Orange */
+    --accent-color: #45a29e;
+    /* Amber */
+    --background-color: #1f2833;
+    /* Light Gray */
+    --text-color: #333;
+    /* Dark Gray */
+    --white-color: #c5c6c7;
+    /* White */
+}
+
+.webTemplateFormPage {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat center center url("../../../Assets/WTLP-Hero-BG.jpg");
+    background-size: cover;
+    position: relative;
+
+}
+
+.webTemplateFormPage::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: var(--background-color);
+    opacity: 1;
+}
+
+.WTLP-Form-Container {
+    margin: 50px 0px;
+    max-width: 300px;
+    aspect-ratio: 2/2;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    z-index: 5;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+.WTLP-Form-Heading {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+
+.WTLP-Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.WTLP-Form>* {
+    width: 100%;
+    margin: 1px 0px;
+    color: var(--white-color);
+}
+
+.WTLP-Form>input {
+    padding: 8px 5px;
+    width: 95%;
+    outline: none;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    background: none;
+    color: var(--white-color);
+}
+
+.WTLP-Form-ForgetPassword {
+    align-self: flex-end;
+    font-size: 16px;
+    margin: 5px 0px 10px 0px;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.WTLP-Form-ForgetPassword:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.WTLP-Form-SignIn-Button {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 0px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.WTLP-Form-SignIn-Button:hover {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 0px;
+}
+
+.WTLP-SocialAccount-Section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.WTLP-Social-Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 8;
+    color: var(--white-color);
+}
+
+.WTLP-Social-Header>p {
+    width: 75%;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.WTLP-Social-Header-Line {
+    width: 10%;
+    height: 2px;
+    background-color: var(--white-color);
+}
+
+.WTLP-Social-Icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.WTLP-Social-Icon {
+    width: 23px;
+    height: 23px;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.WTLP-Social-Icon:hover {
+    transform: scale(1.1);
+    color: var(--accent-color);
+}
+
+.WTLP-No-Account-Label {
+    color: var(--white-color);
+}
+
+.WTLP-No-Account-Label>span {
+    color: var(--primary-color);
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+@media only screen and (max-width: 1150px) {
+
+
+    .WTLP-Form-Container {
+        padding: 15px 25px;
+    }
+
+    .WTLP-Form-Heading {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    .WTLP-Form>input {
+        padding: 6px 4px;
+        font-size: 12px;
+    }
+    .WTLP-Form>*{
+        font-size: 14px;
+    }
+
+    .WTLP-Form-ForgetPassword {
+        font-size: 15px;
+        margin: 4px 0px 8px 0px;
+     
+    }
+
+    .WTLP-Form-SignIn-Button {
+        font-size:14px;
+        padding: 7px 0px;
+    }
+
+    .WTLP-Form-SignIn-Button:hover {
+    
+        padding: 8px 0px;
+    }
+
+    .WTLP-SocialAccount-Section {
+        margin-top: 8px;
+    }
+
+
+    .WTLP-Social-Header>p {
+        width: 75%;
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 5px;
+    }
+
+
+    .WTLP-Social-Icons {
+       
+        padding: 8px;
+    }
+
+    .WTLP-Social-Icon {
+        width: 21px;
+        height: 21px;
+    }
+
+
+    .WTLP-No-Account-Label {
+        color: var(--white-color);
+        font-size: 15px;
+    }
+
+    .WTLP-No-Account-Label>span {
+        color: var(--primary-color);
+        cursor: pointer;
+        color: var(--accent-color);
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+
+
+    .WTLP-Form-Container {
+        padding: 8px 15px;
+    }
+
+    .WTLP-Form-Heading {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .WTLP-Form>input {
+        padding: 5px 4px;
+        font-size: 10px;
+    }
+    .WTLP-Form>*{
+        font-size: 12px;
+    }
+
+    .WTLP-Form-ForgetPassword {
+        font-size: 12px;
+        margin: 4px 0px 8px 0px;
+     
+    }
+
+    .WTLP-Form-SignIn-Button {
+        font-size:12px;
+        padding: 5px 0px;
+    }
+
+    .WTLP-Form-SignIn-Button:hover {
+    
+        padding: 6px 0px;
+    }
+
+    .WTLP-SocialAccount-Section {
+        margin-top: 8px;
+    }
+
+
+    .WTLP-Social-Header>p {
+        width: 75%;
+        font-size: 12px;
+        text-align: center;
+        padding: 5px 5px;
+    }
+
+
+    .WTLP-Social-Icons {
+       
+        padding: 6px;
+    }
+
+    .WTLP-Social-Icon {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .WTLP-No-Account-Label {
+        color: var(--white-color);
+        font-size: 12px;
+    }
+
+    .WTLP-No-Account-Label>span {
+        color: var(--primary-color);
+        cursor: pointer;
+        color: var(--accent-color);
+    }
+
+}
+@media only screen and (max-width: 768px) {
+
+
+    .WTLP-Form-Container {
+        padding: 6px 12px;
+    }
+
+    .WTLP-Form-Heading {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .WTLP-Form>input {
+        padding: 4px 4px;
+        font-size: 8px;
+    }
+    .WTLP-Form>*{
+        font-size: 10px;
+    }
+
+    .WTLP-Form-ForgetPassword {
+        font-size: 10px;
+        margin: 3px 0px 6px 0px;
+     
+    }
+
+    .WTLP-Form-SignIn-Button {
+        font-size:10px;
+        padding: 4px 0px;
+    }
+
+    .WTLP-Form-SignIn-Button:hover {
+    
+        padding: 5px 0px;
+    }
+
+    .WTLP-SocialAccount-Section {
+        margin-top: 8px;
+    }
+
+
+    .WTLP-Social-Header>p {
+        width: 75%;
+        font-size: 10px;
+        text-align: center;
+        padding: 5px 5px;
+    }
+
+
+    .WTLP-Social-Icons {
+       
+        padding: 5px;
+    }
+
+    .WTLP-Social-Icon {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    .WTLP-No-Account-Label {
+        color: var(--white-color);
+        font-size: 10px;
+    }
+
+    .WTLP-No-Account-Label>span {
+        color: var(--primary-color);
+        cursor: pointer;
+        color: var(--accent-color);
+    }
+
+}
+@media only screen and (max-width: 550px) {
+
+
+    .WTLP-Form-Container {
+        padding: 4px 8px;
+    }
+
+    .WTLP-Form-Heading {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+    .WTLP-Form>input {
+        padding: 3px 3px;
+        font-size: 7px;
+    }
+    .WTLP-Form>*{
+        font-size: 7px;
+    }
+
+    .WTLP-Form-ForgetPassword {
+        font-size: 7px;
+        margin: 2px 0px 4px 0px;
+     
+    }
+
+    .WTLP-Form-SignIn-Button {
+        font-size:7px;
+        padding: 3px 0px;
+    }
+
+    .WTLP-Form-SignIn-Button:hover {
+    
+        padding: 4px 0px;
+    }
+
+    .WTLP-SocialAccount-Section {
+        margin-top: 5px;
+    }
+
+
+    .WTLP-Social-Header>p {
+        width: 75%;
+        font-size: 7px;
+        text-align: center;
+        padding: 3px 3px;
+    }
+
+
+    .WTLP-Social-Icons {
+       
+        padding: 3px;
+    }
+
+    .WTLP-Social-Icon {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .WTLP-No-Account-Label {
+        color: var(--white-color);
+        font-size: 6px;
+    }
+
+    .WTLP-No-Account-Label>span {
+        color: var(--primary-color);
+        cursor: pointer;
+        color: var(--accent-color);
+    }
+
+}

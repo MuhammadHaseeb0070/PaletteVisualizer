@@ -1,0 +1,38 @@
+/* src/components/colorpicker.css */
+.color-picker-popup {
+    position: absolute;
+    z-index: 1000;
+    top: 10%; /* Adjust as needed */
+    left: -70%;   /* Adjust as needed */
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.448);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .colorPickerCloseButton{
+    width: 100%;
+    height: 30px;
+    color: var(--secondary);
+    cursor: pointer;
+    background-color: var(--background);
+    transition: all 0.2s ease-in-out;
+  }
+  .colorPickerCloseButton:hover{
+    background-color: var(--primary);
+    color: var(--background);
+  }
+  .colorPickerCloseButton:active{
+    background-color: var(--primarylight);
+    color: var(--secondary);
+  }
+  .color-picker-popup .chrome-picker {
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 10px ;
+    background-color: aqua;
+  }
+  

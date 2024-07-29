@@ -1,0 +1,14 @@
+:root {
+  --primary: #096CBC;
+  --secondary: #3A4454;
+  --background:#FCF7F8;
+  --primarylight:#096bbc3b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  overflow: hidden;
+}

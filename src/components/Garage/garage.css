@@ -1,0 +1,355 @@
+.garage {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toolBoxButton {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    transform: translate(-100%);
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.toolBoxButton.insideButton {
+    transform: translate(0%);
+}
+
+.closeArrow {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.openArrow {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.toolBoxButton:hover {
+    width: 100px;
+}
+
+.toolBox.activeToolBox {
+    transform: translateX(0);
+    display: flex;
+}
+
+.toolBoxButton>* {
+    width: 70%;
+    height: 70%;
+    color: var(--background);
+}
+
+.toolBox {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    opacity: 1;
+    height: 80vh;
+    width: 400px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--background);
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.301);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+
+.toolBox>h4 {
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.palette {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: var(--secondary);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.319);
+}
+
+.palette>p {
+    margin: 10px 0px;
+    align-self: flex-start;
+    color: var(--secondary);
+}
+
+.hexInput {
+    width: 150px;
+    font-size: 15px;
+    align-self: flex-start;
+    outline: none;
+    border: none;
+    padding: 2px 10px;
+    background-color: var(--background);
+    color: var(--secondary);
+    border: 1px solid var(--primary);
+}
+
+.Visualizer {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 0px 0px 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.Visualizer::-webkit-scrollbar {
+    width: 10px;
+    /* Reduced width */
+    background-color: var(--back);
+    /* Light background */
+}
+
+.Visualizer::-webkit-scrollbar-button {
+    display: none;
+    /* Remove buttons */
+}
+
+.Visualizer::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Match background color */
+}
+
+.Visualizer::-webkit-scrollbar-track-piece {
+    background-color: var(--secondary);
+    /* Match background color */
+    border-radius: 10px;
+}
+
+.Visualizer::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    /* Minimalistic thumb color */
+    border-radius: 10px;
+    /* Rounded corners */
+    cursor: pointer;
+}
+
+
+.visualizeHeader {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.visualizeHeader>h3 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.visualizeHeader>ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visualizeHeader>ul>li {
+    margin: 0px 10px;
+}
+
+.visualizeHeader>ul>li>button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.selectedButton {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.showCase {
+    width: 100%;
+    height: 80%;
+    padding-bottom: 10px;
+}
+
+.designSection {
+    width: 100%;
+    aspect-ratio: 16/7;
+    margin: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .formDesign{
+    width: 100%;
+    margin: 10px 0px;
+} */
+
+
+.color-input-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.copyButton {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.289));
+    transition: all 0.2s ease-in-out;
+}
+
+.copyButton:hover {
+    transform: scale(1.03);
+}
+
+.copyButton:active {
+    transform: scale(0.5);
+}
+
+.colorShow {
+    width: 28px;
+    height: 28px;
+    background-color: rgba(0, 255, 255, 0);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+    border-radius: 3px;
+}
+
+.color-picker-icon {
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.color-picker-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.26);
+}
+
+.buttonImageColorPicker {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+    .toolBoxButton {
+        width: 70px;
+        height: 40px;
+
+    }
+
+
+    .toolBoxButton:hover {
+        width: 80px;
+    }
+
+    .toolBox.activeToolBox {
+        transform: translateX(0);
+        display: flex;
+    }
+
+    .toolBoxButton>* {
+        width: 60%;
+        height: 60%;
+    }
+
+    .toolBox {
+        height: 80vh;
+        width: 350px;
+        padding: 25px 0px;
+    }
+
+
+    .toolBox>h4 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .palette {
+        width: 75%;
+        padding: 5px 8px;
+    }
+
+    .palette>p {
+        margin: 10px 0px;
+    }
+
+    .hexInput {
+        width: 120px;
+        font-size: 14px;
+        padding: 2px 8px;
+    }
+
+    .color-input-wrapper {
+        padding: 2px;
+        justify-content: space-evenly;
+        margin: 5px 0px;
+    }
+
+    .copyButton {
+        width: 19px;
+        height: 19px;
+    }
+
+    .colorShow {
+        width: 25px;
+        height: 25px;
+    }
+
+    .color-picker-icon {
+        padding: 4px;
+        width: 25px;
+        height: 25px;
+    }
+
+  
+    .buttonImageColorPicker {
+        width: 95%;
+        height: 95%;
+    }
+}
