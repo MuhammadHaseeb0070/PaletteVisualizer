@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Adjust if your main branch is named differently
 
+permissions:
+  contents: write  # Ensure the token has write permission to the contents
+
 jobs:
   build:
     runs-on: ubuntu-latest
