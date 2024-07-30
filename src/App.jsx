@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -10,7 +9,7 @@ import Garage from './components/Garage/Garage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/PaletteVisualizer">
       <div className='AppScreen'>
         <Navbar />
         <Routes>
