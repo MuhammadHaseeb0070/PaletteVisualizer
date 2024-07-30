@@ -6,6 +6,7 @@
 }
 
 .toolBoxButton {
+    visibility: visible !important;
     position: absolute;
     top: 30px;
     left: 0;
@@ -46,6 +47,7 @@
 .toolBox.activeToolBox {
     transform: translateX(0);
     display: flex;
+    visibility: visible;
 }
 
 .toolBoxButton>* {
