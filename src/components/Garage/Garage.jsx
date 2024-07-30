@@ -40,9 +40,9 @@ function Garage() {
   return (
     <div className="garage">
 
-
+      <button className={`toolBoxButton ${toolBoxOpen == false ? 'outsideButton' : 'insideButton'}`} onClick={() => { settoolBoxopen(!toolBoxOpen) }}><IoIosArrowBack className={`${toolBoxOpen === true ? 'closeArrow' : 'openArrow'}`} /><FaPalette /></button>
       <div className={`toolBox ${toolBoxOpen === true ? 'activeToolBox' : ''}`}>
-        <button className={`toolBoxButton ${toolBoxOpen ==false ? 'outsideButton' : 'insideButton'}` } onClick={() => { settoolBoxopen(!toolBoxOpen) }}><IoIosArrowBack className={`${toolBoxOpen === true ? 'closeArrow' : 'openArrow'}`} /><FaPalette /></button>
+
         <h4>Tool Box</h4>
         <div className="palette">
           <p>Select Colors for Palette</p>
