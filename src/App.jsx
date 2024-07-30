@@ -10,7 +10,7 @@ import Garage from './components/Garage/Garage';
 
 function App() {
   return (
-    <Router basename="/PaletteVisualizer">
+    <Router>
       <div className='AppScreen'>
         <Navbar />
         <Routes>
