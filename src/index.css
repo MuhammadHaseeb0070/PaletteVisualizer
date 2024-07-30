@@ -11,4 +11,6 @@
 }
 body{
   overflow: hidden;
+  overflow-x: hidden !important;
+  width: 100vw;
 }

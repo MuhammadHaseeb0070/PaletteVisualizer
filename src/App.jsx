@@ -11,7 +11,7 @@ import Garage from './components/Garage/Garage';
 function App() {
   return (
     <Router>
-      <div>
+      <div className='AppScreen'>
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />

@@ -124,7 +124,8 @@
         position: absolute;
         right: 0;
         top: 0;
-        display: none;
+        display: flex;
+        visibility: hidden;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -155,7 +156,6 @@
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
-        display: flex;
         z-index: 1000 !important;
     }
 
